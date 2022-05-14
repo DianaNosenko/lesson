@@ -1,29 +1,64 @@
 body {
-    font-size: 48px;
+    background-color: rgb(48, 47, 47);
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-thead  {
-    color: white;
-    background-color: rgb(4, 57, 39);
-}
+.card {
+    width: 400px;
+    height: 500px;
 
-tbody tr:nth-child(odd) td:nth-child(odd) {
-  background-color: darkturquoise;
+    
+
 }
-tbody tr:nth-child(odd) td:nth-child(even) {
-    background-color: paleturquoise;
+.part1 {
+    background-color: rgb(64, 54, 54);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 250px;
+    z-index: 10;
+    margin-top: 125px;
+    text-align: center;
+    
+   
+    
 }
-tbody tr:nth-child(even) td:nth-child(odd) {
-    background-color: paleturquoise;
-}
-tbody tr:nth-child(even) td:nth-child(even) {
+.part2 {
     background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 250px;
+    margin-top: 125px;
+    
+    
 }
 
-tfoot {
-    background-color: gray;
-
-      }
+.card:hover .part1 {
+    background-color: rgb(223, 86, 86);
+    transform: translate(0px, -125px );
+    transition-duration: 1s;
+    
+    
+}
+.card:hover .part2 {
+    transform: translate(0px, 125px );
+    transition-duration: 1s;
+    
+}
+a {
+    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    
+}
+img {
+    height: 75px;
+    width: 75px;
+}
+p {
+    font-size: 30px;
+    padding-left: 10px;
+}
